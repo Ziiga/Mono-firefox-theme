@@ -184,8 +184,8 @@ tab {
 /* Center all inside tab */
 .tab-content {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center !important;
+    align-items: center !important;
     margin-top: -1px;
     min-width: 100% !important;
     padding: 0 4px !important;
@@ -225,9 +225,16 @@ tab {
     margin-left: auto !important;
 }
 
-/* Force tab favicon to the center */
+/* Center tab content */
+.tab-label-container {
+	min-width: 0 !important;
+	max-width: min-content !important;
+}
 .tabbrowser-tab:not([pinned]) .tab-icon-stack {
-    margin-left: auto !important;
+	margin-left: auto !important;
+}
+.tab-close-button {
+	margin-left: auto;
 }
 
 /* Tab icon margin */
