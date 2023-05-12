@@ -56,20 +56,10 @@
         padding-right: 3px !important;
     }
 
-/* mine: remove left padding when maximized */
-    :root[tabsintitlebar][sizemode="maximized"] #nav-bar {
-        padding-left: 3px !important;
-        padding-right: 3px !important;
-    }
     /* Window buttons box */
     :root[tabsintitlebar] #titlebar .titlebar-buttonbox-container {
         left: 0;
         right: auto !important;
-    }
-
-/* mine: remove window buttons when maximized */
-        :root[tabsintitlebar][sizemode="maximized"] #titlebar .titlebar-buttonbox-container {
-	display: none !important;
     }
 
     /* Fullscreen headerbar padding for 1 button */

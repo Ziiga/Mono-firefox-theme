@@ -1,0 +1,32 @@
+--- mono.backup/mono-firefox-theme/theme/parts/csd.css	2022-10-28 16:33:33.000000000 +0200
++++ mono-firefox-theme/theme/parts/csd.css	2022-12-11 22:46:31.336297894 +0100
+@@ -56,12 +56,22 @@
+         padding-right: 3px !important;
+     }
+ 
++/* mine: remove left padding when maximized */
++    :root[tabsintitlebar][sizemode="maximized"] #nav-bar {
++        padding-left: 3px !important;
++        padding-right: 3px !important;
++    }
+     /* Window buttons box */
+     :root[tabsintitlebar] #titlebar .titlebar-buttonbox-container {
+         left: 0;
+         right: auto !important;
+     }
+ 
++/* mine: remove window buttons when maximized */
++        :root[tabsintitlebar][sizemode="maximized"] #titlebar .titlebar-buttonbox-container {
++	display: none !important;
++    }
++
+     /* Fullscreen headerbar padding for 1 button */
+     :root[tabsintitlebar][inFullscreen] #nav-bar {
+         padding-left: 50px !important;
+@@ -204,4 +214,4 @@
+     :root[tabsintitlebar] #nav-bar .urlbar-input-box * {
+         -moz-window-dragging: no-drag !important;
+     }
+-}
+\ No newline at end of file
++}
